@@ -30,11 +30,10 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "sha512": "a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -179,23 +178,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\leonardo_fraga\\.nuget\\packages\\": {},
+    "C:\\Users\\Leonardo\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leonardo_fraga\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\Leonardo\\Source\\Repos\\CursoUdemyTDD\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj",
       "projectName": "CursoOnline.Dominio",
-      "projectPath": "C:\\Users\\leonardo_fraga\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj",
-      "packagesPath": "C:\\Users\\leonardo_fraga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leonardo_fraga\\source\\repos\\CursoOnline\\src\\CursoOnline.Dominio\\obj\\",
+      "projectPath": "C:\\Users\\Leonardo\\Source\\Repos\\CursoUdemyTDD\\src\\CursoOnline.Dominio\\CursoOnline.Dominio.csproj",
+      "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Leonardo\\Source\\Repos\\CursoUdemyTDD\\src\\CursoOnline.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\leonardo_fraga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Leonardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -203,7 +202,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://ausdwsynapp02.aus.amer.dell.com:81/nuget/latam-nuget/": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

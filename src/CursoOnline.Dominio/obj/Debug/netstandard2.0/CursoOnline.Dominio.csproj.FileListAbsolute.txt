@@ -7,3 +7,12 @@ C:\Users\leonardo_fraga\source\repos\CursoOnline\src\CursoOnline.Dominio\obj\Deb
 C:\Users\leonardo_fraga\source\repos\CursoOnline\src\CursoOnline.Dominio\obj\Debug\netstandard2.0\CursoOnline.Dominio.AssemblyInfo.cs
 C:\Users\leonardo_fraga\source\repos\CursoOnline\src\CursoOnline.Dominio\obj\Debug\netstandard2.0\CursoOnline.Dominio.dll
 C:\Users\leonardo_fraga\source\repos\CursoOnline\src\CursoOnline.Dominio\obj\Debug\netstandard2.0\CursoOnline.Dominio.pdb
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\src\CursoOnline.Dominio\bin\Debug\netstandard2.0\CursoOnline.Dominio.deps.json
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\src\CursoOnline.Dominio\bin\Debug\netstandard2.0\CursoOnline.Dominio.dll
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\src\CursoOnline.Dominio\bin\Debug\netstandard2.0\CursoOnline.Dominio.pdb
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\src\CursoOnline.Dominio\obj\Debug\netstandard2.0\CursoOnline.Dominio.csprojAssemblyReference.cache
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\src\CursoOnline.Dominio\obj\Debug\netstandard2.0\CursoOnline.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\src\CursoOnline.Dominio\obj\Debug\netstandard2.0\CursoOnline.Dominio.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\src\CursoOnline.Dominio\obj\Debug\netstandard2.0\CursoOnline.Dominio.AssemblyInfo.cs
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\src\CursoOnline.Dominio\obj\Debug\netstandard2.0\CursoOnline.Dominio.dll
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\src\CursoOnline.Dominio\obj\Debug\netstandard2.0\CursoOnline.Dominio.pdb

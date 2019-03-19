@@ -15,3 +15,9 @@ C:\Users\leonardo_fraga\source\repos\CursoOnline\test\CursoOnline.Dominio.Test\o
 C:\Users\leonardo_fraga\source\repos\CursoOnline\test\CursoOnline.Dominio.Test\bin\Debug\netcoreapp2.1\CursoOnline.Dominio.dll
 C:\Users\leonardo_fraga\source\repos\CursoOnline\test\CursoOnline.Dominio.Test\bin\Debug\netcoreapp2.1\CursoOnline.Dominio.pdb
 C:\Users\leonardo_fraga\source\repos\CursoOnline\test\CursoOnline.Dominio.Test\obj\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.csproj.CopyComplete
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\obj\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.csprojAssemblyReference.cache
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\obj\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\obj\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\obj\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.AssemblyInfo.cs
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\obj\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.dll
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\obj\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.pdb

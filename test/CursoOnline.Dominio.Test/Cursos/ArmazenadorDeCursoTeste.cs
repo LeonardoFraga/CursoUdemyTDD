@@ -31,7 +31,7 @@ namespace CursoOnline.Dominio.Test.Cursos
     {
         public void Armazenar(CursoDto cursoDto)
         {
-            cursoDto.Descricao = "a";
+            cursoDto.Descricao = "J";
         }
     }
 
