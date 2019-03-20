@@ -1,9 +1,14 @@
-﻿using Xunit;
+﻿using Moq;
+using Xunit;
 
 namespace CursoOnline.Dominio.Test.Cursos
 {
     public class ArmazenadorDeCursoTeste
     {
+        // Simula comportamentos Ex.: Acesso ao banco de dados.
+        // Mock
+        // Stubs
+
         [Fact]
         public void DeveAdicionarCurso()
         {
@@ -16,9 +21,14 @@ namespace CursoOnline.Dominio.Test.Cursos
                 Valor = 850
             };
 
-            var armazenadorDeCurso = new ArmazenadorDeCurso();
+            var cursoRepositorioMock = new Mock<ICursoRepositorio>();
+
+            var armazenadorDeCurso = new ArmazenadorDeCurso(cursoRepositorioMock.Object);
 
             armazenadorDeCurso.Armazenar(cursoDto);
+
+            //Validando se o Adicionar da interface foi chamado, nestes casos pode subistituir o Assert.
+            cursoRepositorioMock.Verify(x => x.Adicionar(It.IsAny<Curso>()));
         }
     }
 
@@ -29,13 +39,21 @@ namespace CursoOnline.Dominio.Test.Cursos
 
     public class ArmazenadorDeCurso
     {
+        private readonly ICursoRepositorio _cursoRepositorio;
+
+        public ArmazenadorDeCurso(ICursoRepositorio cursoRepositorio)
+        {
+            _cursoRepositorio = cursoRepositorio;
+        }
+
         public void Armazenar(CursoDto cursoDto)
         {
-            cursoDto.Descricao = "J";
+            var curso = new Curso(cursoDto.Nome, cursoDto.Descricao, cursoDto.CargaHoraria, PublicoAlvo.Estudante, cursoDto.Valor);
+            _cursoRepositorio.Adicionar(curso);
         }
     }
 
-    internal class CursoDto
+    public class CursoDto
     {
         public string Nome { get; set; }
         public string Descricao { get; set; }

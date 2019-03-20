@@ -21,3 +21,14 @@ C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\obj\D
 C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\obj\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.AssemblyInfo.cs
 C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\obj\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.dll
 C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\obj\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.pdb
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\bin\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.deps.json
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\bin\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.runtimeconfig.json
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\bin\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.runtimeconfig.dev.json
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\bin\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.dll
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\bin\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.pdb
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\bin\Debug\netcoreapp2.1\CursoOnline.Dominio.dll
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\bin\Debug\netcoreapp2.1\CursoOnline.Dominio.pdb
+C:\Users\Leonardo\Source\Repos\CursoUdemyTDD\test\CursoOnline.Dominio.Test\obj\Debug\netcoreapp2.1\CursoOnline.Dominio.Test.csproj.CopyComplete
