@@ -1,64 +1,66 @@
-﻿using Moq;
+﻿using Bogus;
+using CursoOnline.Dominio.Test._Builders;
+using CursoOnline.Dominio.Test._util;
+using Moq;
+using System;
 using Xunit;
 
 namespace CursoOnline.Dominio.Test.Cursos
 {
     public class ArmazenadorDeCursoTeste
     {
-        // Simula comportamentos Ex.: Acesso ao banco de dados.
-        // Mock
-        // Stubs
+        private readonly CursoDto _cursoDto;
+        private readonly Mock<ICursoRepositorio> _cursoRepositorioMock;
+        private readonly ArmazenadorDeCurso _armazenadorDeCurso;
+
+        //Mock e Stubs simulam comportamentos iguais ao de produção. Ex.: Acesso ao banco de dados.
+
+        public ArmazenadorDeCursoTeste()
+        {
+            _cursoRepositorioMock = new Mock<ICursoRepositorio>();
+
+            //Injetando a interface através do construtor
+            _armazenadorDeCurso = new ArmazenadorDeCurso(_cursoRepositorioMock.Object);
+
+            var fake = new Faker();
+            _cursoDto = new CursoDto
+            {
+                Nome = fake.Name.FirstName(),
+                Descricao = fake.Lorem.Paragraph(),
+                CargaHoraria = fake.Random.Double(50, 1000),
+                PublicoAlvo = "Estudante",
+                Valor = fake.Random.Double(1000, 2000)
+            };
+        }
 
         [Fact]
         public void DeveAdicionarCurso()
         {
-            var cursoDto = new CursoDto
-            {
-                Nome = "Nome",
-                Descricao = "Descricao",
-                CargaHoraria = 80,
-                PublicoAlvoId = 1,
-                Valor = 850
-            };
+            _armazenadorDeCurso.Armazenar(_cursoDto);
 
-            var cursoRepositorioMock = new Mock<ICursoRepositorio>();
-
-            var armazenadorDeCurso = new ArmazenadorDeCurso(cursoRepositorioMock.Object);
-
-            armazenadorDeCurso.Armazenar(cursoDto);
-
-            //Validando se o Adicionar da interface foi chamado, nestes casos pode subistituir o Assert.
-            cursoRepositorioMock.Verify(x => x.Adicionar(It.IsAny<Curso>()));
+            // Validando se o Adicionar da interface foi chamado, nestes casos pode subistituir o Assert.
+            // Com o It.Is eu testo se a instancia que estou salvando e realmente a que foi passada.
+            _cursoRepositorioMock.Verify(x => x.Adicionar(It.Is<Curso>(c => c.Nome == _cursoDto.Nome && c.Descricao == _cursoDto.Descricao)));  // Mock pois apenas faz uma verificação, não há comportamento.
         }
-    }
 
-    public interface ICursoRepositorio
-    {
-        void Adicionar(Curso curso);
-    }
-
-    public class ArmazenadorDeCurso
-    {
-        private readonly ICursoRepositorio _cursoRepositorio;
-
-        public ArmazenadorDeCurso(ICursoRepositorio cursoRepositorio)
+        [Fact]
+        public void NaoDeveInformarPublicoAlvoInvalido()
         {
-            _cursoRepositorio = cursoRepositorio;
+            var publicoAlvoInvalido = "Médico";
+            _cursoDto.PublicoAlvo = publicoAlvoInvalido;
+
+            Assert.Throws<ArgumentException>(() => _armazenadorDeCurso.Armazenar(_cursoDto))
+                .ComMensagem("Público Alvo inválido.");
         }
 
-        public void Armazenar(CursoDto cursoDto)
+        [Fact]
+        public void NaoDeveAdicionarCursoComNomeIgualAOutroJaExistente()
         {
-            var curso = new Curso(cursoDto.Nome, cursoDto.Descricao, cursoDto.CargaHoraria, PublicoAlvo.Estudante, cursoDto.Valor);
-            _cursoRepositorio.Adicionar(curso);
-        }
-    }
+            var cursoJaSalvo = CursoBuilder.Novo().ComNome(_cursoDto.Nome).ComCargaHoraria(1).ComValor(1).Build();
+            _cursoRepositorioMock.Setup(c => c.ObterPeloNome(_cursoDto.Nome)).Returns(cursoJaSalvo);// Stub pois simula o comportamento de ir ao banco
 
-    public class CursoDto
-    {
-        public string Nome { get; set; }
-        public string Descricao { get; set; }
-        public int CargaHoraria { get; set; }
-        public int PublicoAlvoId { get; set; }
-        public double Valor { get; set; }
+            Assert.Throws<ArgumentException>(() => _armazenadorDeCurso.Armazenar(_cursoDto))
+                .ComMensagem("Já existe curso salvo com esse nome.");
+        }
     }
 }
